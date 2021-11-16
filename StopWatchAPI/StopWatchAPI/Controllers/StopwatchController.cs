@@ -20,13 +20,13 @@ namespace StopWatchAPI.Controllers
             _repository = repository;
         }
 
-        [HttpGet]
+        [HttpGet("Start")]
         public ActionResult<StopwatchModel> GetInstance()
         {
             var _stopwatch= _repository.StartTimer();
             return Ok(_stopwatch);
         }
-        [HttpGet]
+        [HttpGet("Stop")]
         public ActionResult<StopwatchModel> StopInstance()
         {
             var _stopwatch = _repository.StopTimer();

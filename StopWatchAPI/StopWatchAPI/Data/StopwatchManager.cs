@@ -15,6 +15,7 @@ namespace StopWatchAPI.Data
         }
         private static StopwatchManager _instance;
         private static bool _isRunning =false;
+        private static long timeSpan = 0;
         public static StopwatchManager GetObject()
         {
             if (_instance is null)
@@ -25,20 +26,29 @@ namespace StopWatchAPI.Data
         {
             Stopwatch stopWatch = new Stopwatch();
             StopwatchModel stopwatchModel = new StopwatchModel();
-            _isRunning = isStrat;
-            if (!_isRunning)
+            if (isStrat)
             {
-                stopWatch.Start();
-                _isRunning = true;
-                stopwatchModel.startTimeSpan = Stopwatch.GetTimestamp();
-                stopwatchModel.isRunning = _isRunning;
-                //TimeSpan ts = stopWatch.Elapsed;
-                //long dt = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+                if (!_isRunning)
+                {
+                    stopWatch.Start();
+                    _isRunning = isStrat;
+                    timeSpan = Stopwatch.GetTimestamp();
+                    stopwatchModel.startTimeSpan = timeSpan;
+                    stopwatchModel.isRunning = _isRunning;
+                    //TimeSpan ts = stopWatch.Elapsed;
+                    //long dt = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+                }
+                else
+                {
+                    stopwatchModel.startTimeSpan = timeSpan;
+                    stopwatchModel.isRunning = _isRunning;
+                }
             }
             else
             {
                 stopWatch.Stop();
                 _isRunning = false;
+                timeSpan = 0;
                 stopwatchModel.isRunning = _isRunning;
                 stopwatchModel.startTimeSpan = 0;
                 //tStamp = Stopwatch.GetTimestamp();
