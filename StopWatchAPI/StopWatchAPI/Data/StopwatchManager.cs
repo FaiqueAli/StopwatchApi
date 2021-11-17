@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace StopWatchAPI.Data
 {
-    public class StopwatchManager
+    public  class StopwatchManager
     {
         private StopwatchManager()
         {
@@ -16,43 +16,33 @@ namespace StopWatchAPI.Data
         private static StopwatchManager _instance;
         private static bool _isRunning =false;
         private static long timeSpan = 0;
+        private static readonly object Instancelock = new object();
         public static StopwatchManager GetObject()
         {
-            if (_instance is null)
-                _instance = new StopwatchManager();
-            return _instance;
+            lock (Instancelock)
+            {
+                if (_instance is null)
+                    _instance = new StopwatchManager();
+                return _instance;
+            }
         }
-        public StopwatchModel OperateStopwatch(bool isStrat)
+        public StopwatchModel OperateStopwatch(bool isStart)
         {
             Stopwatch stopWatch = new Stopwatch();
             StopwatchModel stopwatchModel = new StopwatchModel();
-            if (isStrat)
+            if (isStart==true && _isRunning==false)
             {
-                if (!_isRunning)
-                {
-                    stopWatch.Start();
-                    _isRunning = isStrat;
-                    timeSpan = Stopwatch.GetTimestamp();
-                    stopwatchModel.startTimeSpan = timeSpan;
-                    stopwatchModel.isRunning = _isRunning;
-                    //TimeSpan ts = stopWatch.Elapsed;
-                    //long dt = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
-                }
-                else
-                {
-                    stopwatchModel.startTimeSpan = timeSpan;
-                    stopwatchModel.isRunning = _isRunning;
-                }
+                stopWatch.Start();
+                timeSpan = Stopwatch.GetTimestamp();
             }
-            else
+            else if (!isStart)
             {
                 stopWatch.Stop();
-                _isRunning = false;
                 timeSpan = 0;
-                stopwatchModel.isRunning = _isRunning;
-                stopwatchModel.startTimeSpan = 0;
-                //tStamp = Stopwatch.GetTimestamp();
             }
+            _isRunning = isStart;
+            stopwatchModel.startTimeSpan = timeSpan;
+            stopwatchModel.isRunning = _isRunning;
             return stopwatchModel;
         }
     }
