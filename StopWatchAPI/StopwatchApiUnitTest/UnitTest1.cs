@@ -8,7 +8,7 @@ namespace StopwatchApiUnitTest
     public class UnitTest1
     {
         [TestMethod]
-        public void Sing_Stopwatch_for_MultipleClients_Test()
+        public void Single_Stopwatch_for_MultipleClients_Test()
         {
             //Arrange
             StopwatchModel stopwatchModelClientA = new StopwatchModel();
