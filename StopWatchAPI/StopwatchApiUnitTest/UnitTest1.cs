@@ -1,12 +1,11 @@
-﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StopWatchAPI.Data;
 using StopWatchAPI.Model;
 
-namespace StopwatchApiMSUnitTest
+namespace StopwatchApiUnitTest
 {
     [TestClass]
-    class StopwatchManagerUnitTest
+    public class UnitTest1
     {
         [TestMethod]
         public void Sing_Stopwatch_for_MultipleClients_Test()
@@ -22,7 +21,7 @@ namespace StopwatchApiMSUnitTest
             stopwatchModelClientB = watchManagerClientB.OperateStopwatch(true);
 
             //Assert
-            Assert.Equals(stopwatchModelClientA.startTimeSpan, stopwatchModelClientB.startTimeSpan);
+            Assert.AreEqual(stopwatchModelClientA.startTimeSpan, stopwatchModelClientB.startTimeSpan);
         }
     }
 }

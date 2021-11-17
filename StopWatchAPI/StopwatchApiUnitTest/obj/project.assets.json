@@ -6320,11 +6320,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Full Time Jobs\\Applied jobs\\Applied job on updated CV\\CYTENA\\test\\StopWatchAPI\\StopwatchApiMSUnitTest\\StopwatchApiMSUnitTest.csproj",
-      "projectName": "StopwatchApiMSUnitTest",
-      "projectPath": "F:\\Full Time Jobs\\Applied jobs\\Applied job on updated CV\\CYTENA\\test\\StopWatchAPI\\StopwatchApiMSUnitTest\\StopwatchApiMSUnitTest.csproj",
+      "projectUniqueName": "F:\\Full Time Jobs\\Applied jobs\\Applied job on updated CV\\CYTENA\\test\\StopWatchAPI\\StopwatchApiUnitTest\\StopwatchApiUnitTest.csproj",
+      "projectName": "StopwatchApiUnitTest",
+      "projectPath": "F:\\Full Time Jobs\\Applied jobs\\Applied job on updated CV\\CYTENA\\test\\StopWatchAPI\\StopwatchApiUnitTest\\StopwatchApiUnitTest.csproj",
       "packagesPath": "C:\\Users\\Faiq\\.nuget\\packages\\",
-      "outputPath": "F:\\Full Time Jobs\\Applied jobs\\Applied job on updated CV\\CYTENA\\test\\StopWatchAPI\\StopwatchApiMSUnitTest\\obj\\",
+      "outputPath": "F:\\Full Time Jobs\\Applied jobs\\Applied job on updated CV\\CYTENA\\test\\StopWatchAPI\\StopwatchApiUnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Faiq\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "StopwatchApiMSUnitTest/1.0.0": {
+      "StopwatchApiUnitTest/1.0.0": {
         "dependencies": {
           "MSTest.TestAdapter": "2.2.3",
           "MSTest.TestFramework": "2.2.3",
@@ -15,7 +15,7 @@
           "coverlet.collector": "3.0.2"
         },
         "runtime": {
-          "StopwatchApiMSUnitTest.dll": {}
+          "StopwatchApiUnitTest.dll": {}
         }
       },
       "coverlet.collector/3.0.2": {},
@@ -1135,7 +1135,7 @@
     }
   },
   "libraries": {
-    "StopwatchApiMSUnitTest/1.0.0": {
+    "StopwatchApiUnitTest/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
