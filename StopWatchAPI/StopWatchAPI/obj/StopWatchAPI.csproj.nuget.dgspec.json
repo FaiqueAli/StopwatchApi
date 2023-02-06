@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Faiq Data\\personal\\test projects\\stopwatchApi\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj": {}
+    "C:\\Sioux Data\\Faiq Data\\Projects\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj": {}
   },
   "projects": {
-    "C:\\Faiq Data\\personal\\test projects\\stopwatchApi\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj": {
+    "C:\\Sioux Data\\Faiq Data\\Projects\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Faiq Data\\personal\\test projects\\stopwatchApi\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj",
+        "projectUniqueName": "C:\\Sioux Data\\Faiq Data\\Projects\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj",
         "projectName": "StopWatchAPI",
-        "projectPath": "C:\\Faiq Data\\personal\\test projects\\stopwatchApi\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj",
+        "projectPath": "C:\\Sioux Data\\Faiq Data\\Projects\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\StopWatchAPI.csproj",
         "packagesPath": "C:\\Users\\sayedf\\.nuget\\packages\\",
-        "outputPath": "C:\\Faiq Data\\personal\\test projects\\stopwatchApi\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\obj\\",
+        "outputPath": "C:\\Sioux Data\\Faiq Data\\Projects\\StopwatchApi\\StopWatchAPI\\StopWatchAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\sayedf\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.413\\RuntimeIdentifierGraph.json"
         }
       }
     }
