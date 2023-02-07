@@ -27,5 +27,6 @@ namespace StopWatchAPI.Data
         {
             return GetStartTimespan(false);
         }
+
     }
 }
