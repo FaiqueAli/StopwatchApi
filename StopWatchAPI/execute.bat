@@ -1,0 +1,2 @@
+cd StopwatchApiUnitTest
+dotnet test
