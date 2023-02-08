@@ -21,7 +21,8 @@ namespace StopwatchApiUnitTest
             stopwatchModelClientB = watchManagerClientB.OperateStopwatch(true);
 
             //Assert
-            Assert.AreEqual(stopwatchModelClientA.startTimeSpan, stopwatchModelClientB.startTimeSpan);
+            //Assert.AreEqual(stopwatchModelClientA.startTimeSpan, stopwatchModelClientB.startTimeSpan);
+            Assert.AreEqual("321", "234");
         }
     }
 }
